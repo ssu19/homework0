@@ -28,7 +28,10 @@ if ((is.nan(solution[1])) & is.nan(solution[2])){
 }
 
 print(output)
+```
+The line above shows the solution or if there is no solution
 
+```{r, echo=FALSE}
 #create a plot for the equation
 x<- seq(-100,100,length=300)
 plot(x, a*x^2 + b*x + c)
