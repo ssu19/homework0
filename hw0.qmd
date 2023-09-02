@@ -37,4 +37,4 @@ abline(h=0, lty=2)
 
 ```
 
-Graph of equation $ax^2 + bx + c$ with range of $x$ from -100 to 100 and $a$ = 1, $b$ = 3, $c$ =2.
+Graph of equation $ax^2 + bx + c$ showing $x$ from -100 to 100 and $a$ = 1, $b$ = 3, $c$ =2.
