@@ -1,0 +1,40 @@
+---
+title: "hw0"
+format: html
+editor: visual
+---
+
+```{r, echo=FALSE}
+
+#Setting up variables
+a<- 1
+b<- 3
+c<- 2
+
+# Find the solution of the equation
+solution <- c((-b + sqrt(b^2 - 4*a*c)) / 2*a, (-b - sqrt(b^2 - 4*a*c)) / 2*a)
+
+# Check how many solutions and remove non-real numbers
+if ((is.nan(solution[1])) & is.nan(solution[2])){
+  output <- paste("no solution")
+}else{
+  solution <- na.omit(solution)
+  if(length(solution)==1){
+    output <- paste("one solution:", solution)
+  }
+  else{
+    output <- paste("Solutions are:", solution)
+  }
+}
+
+print(output)
+
+#create a plot for the equation
+x<- seq(-100,100,length=300)
+plot(x, a*x^2 + b*x + c)
+abline(h=0, lty=2)
+
+
+```
+
+Graph of equation $ax^2 + bx + c$ with range of $x$ from -100 to 100 and $a$ = 1, $b$ = 3, $c$ =2.
